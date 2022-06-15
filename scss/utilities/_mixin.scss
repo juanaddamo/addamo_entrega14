@@ -1,0 +1,36 @@
+@mixin flex ($flex, $direccion){
+    display: $flex;
+    flex-direction: $direccion;
+}
+
+@mixin textos () {
+    font-family: 'Open Sans';
+    margin: 1rem;
+    text-align: justify
+}
+
+@mixin formatoTarjeta () {
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
+    justify-self: center;
+    background-color: $colorBlanco;
+    border-radius: 0.5rem;
+}
+
+@mixin textoTarjeta () {
+    margin: 0.5rem;
+    padding: 0.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+@mixin estiloBarra () {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: $colorMedio;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    padding: .5rem;
+    max-width: $medidaMobile * 1.7;
+}

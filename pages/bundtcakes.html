@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Pagina en donde se listan los bundtcakes y otras cosas que prepara Annies">
+    <meta name="keywords" content="bundtcake, chocolate blanco, limon y amapolas, alfajorcitos de maicena, cookies">
+
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- link archivo CSS creado con SASS -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- agrego fuente al proyecto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <title>Annie's Bakery</title>
+</head>
+
+<body>  
+    <!-- header + menu bootstrap -->
+    <header class="header-principal">
+        <!-- menu con Bootstrap -->
+        <nav class="navbar fixed-top navbar-expand-lg border-bottom border-light border-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"> <img class="imagenLogo" src="../img/logo_annies.png" alt="Annie's Bakery"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pastelería
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="tartas.html">Tartas Clásicas</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="bundtcakes.html">Bundtcakes y más</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main + titulo + bundtckaes y algo mas -->
+    <main class="estiloBundt">
+        <!-- titulo bundtcakes -->
+        <div class="barraBundt">
+            <img class="logoTarta" src="../img/titulobundt1.png" alt="logo bundtcake">
+            <h1 class="tituloBundt">Bundtcakes y algo más</h1>
+            <img class="logoTarta" src="../img/titulobundt2.png" alt="logo bundtcake">
+        </div>
+        <section class="tarjetaBundt">
+            <!-- imagen bundt 1 -->
+            <div class="bundtUno">
+                <img src="../img/bundt1.jpg" class="imagen" alt="chocolate blanco y arandanos">
+                <p class="nombre">Chocolate blanco y arándanos</p>
+                <p class="texto">Bundtcake de chocolate blanco y arándanos.</p>
+            </div>
+
+            <!-- imagen bundt 2 -->
+            <div class="bundtDos">
+                <img src="../img/bundt2.jpg" class="imagen" alt="limon y amapolas">
+                <p class="nombre">Limón y amapolas</p>
+                <p class="texto">Bundtcake de limón y semillas de amapolas.</p>
+            </div>
+
+            <!-- imagen bundt 3 -->
+            <div class="bundtTres">
+                <img src="../img/bundt3.jpg" class="imagen" alt="limon y amapolas">
+                <p class="nombre">Naranja y chocolate</p>
+                <p class="texto">Bundtcake de naranja y chocolate semi-amargo.</p>
+            </div>
+
+            <!-- imagen bundt 4 -->
+            <div class="bundtCuatro">
+                <img src="../img/bundt4.jpg" class="imagen" alt="chocolate blanco y limon">
+                <p class="nombre">Chocolate blanco y limón</p>
+                <p class="texto">Bundtcake de chocolate blanco y limón.</p>
+            </div>        
+
+            <!-- imagen bundt 5 -->
+            <div class="bundtCinco">
+                <img src="../img/algo1.jpg" class="imagen" alt="alfajorcitos de maicena">
+                <p class="nombre">Alfajorcitos de maicena</p>
+                <p class="texto">Una docena de los clasicos alfajorcitos de maicena.</p>
+            </div> 
+
+            <!-- imagen bundt 6 -->
+            <div class="bundtSeis">
+                <img src="../img/algo2.jpg" class="imagen" alt="cookies de vainilla">
+                <p class="nombre">Cookies de vainilla</p>
+                <p class="texto">Una docena de cookies sabor a vainilla.</p>
+            </div> 
+        </section>
+    </main>
+    
+    <!-- footer -->
+    <footer class="footerUno">
+        <div class="imagenContacto">
+            <a href="https://www.facebook.com/anniesbakeryARG" target="_blank"> <img class="imagenContacto1" src="../img/icon_face.png" alt="Facebook"> </a>
+            <a href="https://www.instagram.com/anniesbakery_arg/" target="_blank"> <img class="imagenContacto2" src="../img/icon_ig.png" alt="Instagram"> </a>
+            <a href="mailto:info@anniesbakery.com.ar" target="_blank"> <img class="imagenContacto3" src="../img/email.png" alt="correo electronico"> </a>
+        </div>
+        <p>Annie's Bakery © - Todos los derechos reservados - 2022</p>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) {
+    .estiloIndex{
+        .carrouselIndex{
+            max-width: $altoCarrousel;
+        }
+        .promoMes {
+            max-width: $altoCarrousel;
+        }
+    }
+    
+    .estiloAbout{
+        .videoUno{
+            width: 520px
+        }
+    }
+    .estiloTartas{
+        display: grid;
+        grid-template-areas: "barraClasica barraClasica"
+                            "clasicaUno clasicaDos"
+                            "clasicaTres clasicaCuatro"
+                            "clasicaCinco clasicaSeis"
+                            "clasicaSiete clasicaOcho"
+                            "clasicaNueve clasicaNueve";
+        grid-gap: 0.5rem;
+    }
+    .estiloBundt{
+        .tarjetaBundt{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .estiloAbout{
+        .videoUno{
+            width: 520px;
+        }
+    }
+    .estiloTartas{
+        display: grid;
+        grid-template-areas: "barraClasica barraClasica barraClasica"
+                            "clasicaUno clasicaDos clasicaTres"
+                            "clasicaCuatro clasicaCinco clasicaSeis"
+                            "clasicaSiete clasicaOcho clasicaNueve";
+        grid-gap: 0.5rem;
+    }
+}
+
+
+
+

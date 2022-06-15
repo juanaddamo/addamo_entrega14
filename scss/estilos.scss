@@ -1,0 +1,235 @@
+// reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// import
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "header";
+@import "footer";
+
+// nesting del archivo index.html
+body{
+    background-image: url(../img/fondo_annies.png);
+    font-family: 'Open Sans';
+    padding-top: 7rem;
+}
+
+.estiloIndex{
+    @include flex (flex, column);
+    align-items: center;
+    justify-content: center;
+    .saludoUno{
+        text-align: center;
+    }
+    .carrouselIndex{
+        width: 95%;
+    }
+    .promo {
+        margin: 10px;
+        padding: 10px;
+    }
+    .promoMes {
+        width: 95%;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    }
+    .promoMes:hover{
+        transform: scale(1.02);
+    }
+    .parrafoDescriptivo{
+        padding: 0.5rem;
+        text-align: center;
+    }
+}
+
+// nesting archivo about.html
+.estiloAbout{
+    @include flex (flex, column);
+    margin: 0.5rem;
+    .videoUno{
+        width: $anchoVideo1;
+        align-self: center;
+    }
+    .aboutCompleta{
+        @include textos ();
+        .imagenIconos{
+            display: flex;
+            margin: 1rem;
+            justify-content: space-evenly;
+        }
+    }
+    .aboutFirma{
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+//nesting del archivo tartas.html
+.estiloTartas{
+    display: grid;
+    grid-template-areas: "barraClasica"
+                        "clasicaUno"
+                        "clasicaDos"
+                        "clasicaTres"
+                        "clasicaCuatro"
+                        "clasicaCinco"
+                        "clasicaSeis"
+                        "clasicaSiete"
+                        "clasicaOcho"
+                        "clasicaNueve";
+    grid-gap: 0.5rem;
+    text-align: center;
+    .barraClasica{
+        grid-area: barraClasica;
+        justify-self: center;
+        @include estiloBarra ();
+    }
+    .clasicaUno{
+        grid-area: clasicaUno;
+        max-width: $medidaCard;
+        .imagen{
+            max-width: $medidaCard;
+            max-height: $medidaCard;
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+        .nombre{
+            @include textoTarjeta ();
+        }
+        @include formatoTarjeta();
+    }
+    .clasicaDos{
+        grid-area: clasicaDos;
+        @extend .clasicaUno;
+    }
+    .clasicaTres{
+        grid-area: clasicaTres;
+        @extend .clasicaUno;
+    }
+    .clasicaCuatro{
+        grid-area: clasicaCuatro;
+        @extend .clasicaUno;
+    }
+    .clasicaCinco{
+        grid-area: clasicaCinco;
+        @extend .clasicaUno;
+    }
+    .clasicaSeis{
+        grid-area: clasicaSeis;
+        @extend .clasicaUno;
+    }
+    .clasicaSiete{
+        grid-area: clasicaSiete;
+        @extend .clasicaUno;
+    }
+    .clasicaOcho{
+        grid-area: clasicaOcho;
+        @extend .clasicaUno;
+    }
+    .clasicaNueve{
+        grid-area: clasicaNueve;
+        @extend .clasicaUno;
+    }
+}
+
+// nesting para bundtcakes.html
+.estiloBundt{
+    @include flex (flex, column);
+    align-items: center;
+    .barraBundt{
+        @include estiloBarra ();
+    }
+    .tarjetaBundt{
+        @include flex (flex, column);
+        .bundtUno{
+            max-width: $medidaCard;
+            .imagen{
+                max-height: $medidaCard;
+                border-radius: 0.5rem 0.5rem 0 0;
+            }
+            .nombre{
+                @include textoTarjeta();
+            }
+            .texto{
+                text-align: center;
+                padding: 1rem;
+            }
+            @include formatoTarjeta();
+        }
+        .bundtDos{
+            @extend .bundtUno;
+        }
+        .bundtTres{
+            @extend .bundtUno;
+        }
+        .bundtCuatro{
+            @extend .bundtUno;
+        }
+        .bundtCinco{
+            @extend .bundtUno;
+        }
+        .bundtSeis{
+            @extend .bundtUno;
+        }
+    }
+}
+
+// nesting archivo contacto.html
+.inicioContacto{
+    .bienvenidaContacto{
+        background-color: $colorMedio;
+        border-radius: 2rem;
+        margin: 1rem;
+        text-align: center;
+    }
+    .parrafoContacto{
+        @include textos ();
+    }
+    .imagenContacto{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1rem;
+        padding: 1rem;
+        }
+}
+
+.formulario{
+    .tituloForm{
+        text-align: center;
+    }
+    form{
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        width: 90%;
+        font-weight: bold;
+        label{
+            justify-content: center;
+        }
+        input{
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            border: 3px solid $colorOscuro;
+        }
+        .botonBorrar{
+            background: $colorMedio;
+            height: 2.3rem;
+            width: 60%;
+            margin-left: 25%;
+            border: 3px solid $colorOscuro;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+        .botonEnviar{
+            background: $colorClaro;
+            @extend .botonBorrar;
+        }
+    }
+}
+
+@import "mediaqueries";

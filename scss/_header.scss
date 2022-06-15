@@ -1,0 +1,22 @@
+.header-principal{
+    .navbar{
+        background-color: $colorMedio;
+        font-family:'Open Sans';
+        .container-fluid{
+            .navbar-brand{
+            }
+            .imagenLogo:hover{
+                transform: scale(1.1);
+            }
+            .collapse{
+                .nav-item{
+                    .nav-link{
+                        }
+                    .dropdown-menu{
+                        background-color: $colorMedio;
+                    }
+                }
+            }
+        }
+    }
+}

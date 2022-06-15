@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Historia del inicio de Annies Bakery">
+    <meta name="keywords" content="pasteleria artesanal, tartas, bundtcakes">
+
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- link archivo CSS creado con SASS -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- agrego fuente al proyecto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <title>Annie's Bakery</title>
+</head>
+
+<body>
+    <!-- header + menu bootstrap -->
+    <header class="header-principal">
+        <!-- menu con Bootstrap -->
+        <nav class="navbar fixed-top navbar-expand-lg border-bottom border-light border-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"> <img class="imagenLogo" src="../img/logo_annies.png" alt="Annie's Bakery"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pastelería
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="tartas.html">Tartas Clásicas</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="bundtcakes.html">Bundtcakes y más</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main + texto about + foto about -->
+    <main class="estiloAbout">
+        <video class="videoUno" autoplay loop muted src="../img/about1.mp4"></video>
+        <section class="aboutCompleta">
+            <p>
+                Les cuento un poquito de mí..., de chiquita me encantaba mirar programas de TV referidos a repostería y jugar por horas en la cocina preparando distintas recetas, me gustaba ayudar a mi mamá en la preparación de todas las tortas de cumpleaños de mi familia, era como un ritual que disfrutaba muchísimo. Luego, por esas vueltas que tiene la vida me dediqué al mundo de sistemas, sin embargo lo que a uno lo hace feliz, siempre prevalece. En el año 2011, siguiendo mi deseo estudié la Carrera de Pastelero Profesional en el @iagastronomia. 
+            </p>
+            <!-- imagenes de iconos entre el texto -->
+            <div class="imagenIconos">
+                <img src="../img/icon_cake1.png" alt="icono de imagen 1">
+                <img src="../img/icon_cake2.png" alt="icono de imagen 2">
+                <img src="../img/icon_cake3.png" alt="icono de imagen 3">
+                <img src="../img/icon_cake4.png" alt="icono de imagen 4">
+            </div>
+            <p>                
+                Al inicio cocinaba para amigos, familia, compañeros de trabajo ... mientras me perfeccionaba aprendiendo de los mejores pasteleros. Sin querer, o mejor dicho, gracias a las devoluciones de quienes me decían que las tortas les resultaban exquisitas, comencé realizar pastelería a pedido para conocidos y amigos. Esas mismas recomendaciones son las que hasta hoy, siguen siendo mi mejor carta de presentación. Esa soy yo, Annie, una emprendedora con mucha pasión (y obsesiva por cada detalle) que con mucho amor crea pastelería para endulzar momentos en la vida de las personas.
+                Ahora sí! Los invito a conocer lo que hago.
+            </p>
+            <p class="aboutFirma">
+                Annie
+            </p>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footerUno">
+        <div class="imagenContacto">
+            <a href="https://www.facebook.com/anniesbakeryARG" target="_blank"> <img class="imagenContacto1" src="../img/icon_face.png" alt="Facebook"> </a>
+            <a href="https://www.instagram.com/anniesbakery_arg/" target="_blank"> <img class="imagenContacto2" src="../img/icon_ig.png" alt="Instagram"> </a>
+            <a href="mailto:info@anniesbakery.com.ar" target="_blank"> <img class="imagenContacto3" src="../img/email.png" alt="correo electronico"> </a>
+        </div>
+        <p>Annie's Bakery © - Todos los derechos reservados - 2022</p>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>

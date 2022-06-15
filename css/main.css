@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header-principal .navbar {
+  background-color: #d49d81;
+  font-family: 'Open Sans'; }
+  .header-principal .navbar .container-fluid .imagenLogo:hover {
+    transform: scale(1.1); }
+  .header-principal .navbar .container-fluid .collapse .nav-item .dropdown-menu {
+    background-color: #d49d81; }
+
+.footerUno {
+  font-family: 'Open Sans';
+  font-size: small;
+  background-image: linear-gradient(#B4846C, #fcd4c0);
+  text-align: center;
+  align-items: center;
+  color: black; }
+  .footerUno .imagenContacto {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+    padding: 1rem; }
+    .footerUno .imagenContacto .imagenContacto1:hover, .footerUno .imagenContacto .imagenContacto2:hover, .footerUno .imagenContacto .imagenContacto3:hover {
+      transform: scale(1.3); }
+
+body {
+  background-image: url(../img/fondo_annies.png);
+  font-family: 'Open Sans';
+  padding-top: 7rem; }
+
+.estiloIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .estiloIndex .saludoUno {
+    text-align: center; }
+  .estiloIndex .carrouselIndex {
+    width: 95%; }
+  .estiloIndex .promo {
+    margin: 10px;
+    padding: 10px; }
+  .estiloIndex .promoMes {
+    width: 95%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.2); }
+  .estiloIndex .promoMes:hover {
+    transform: scale(1.02); }
+  .estiloIndex .parrafoDescriptivo {
+    padding: 0.5rem;
+    text-align: center; }
+
+.estiloAbout {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem; }
+  .estiloAbout .videoUno {
+    width: 300px;
+    align-self: center; }
+  .estiloAbout .aboutCompleta {
+    font-family: 'Open Sans';
+    margin: 1rem;
+    text-align: justify; }
+    .estiloAbout .aboutCompleta .imagenIconos {
+      display: flex;
+      margin: 1rem;
+      justify-content: space-evenly; }
+  .estiloAbout .aboutFirma {
+    text-align: center;
+    font-weight: bold; }
+
+.estiloTartas {
+  display: grid;
+  grid-template-areas: "barraClasica" "clasicaUno" "clasicaDos" "clasicaTres" "clasicaCuatro" "clasicaCinco" "clasicaSeis" "clasicaSiete" "clasicaOcho" "clasicaNueve";
+  grid-gap: 0.5rem;
+  text-align: center; }
+  .estiloTartas .barraClasica {
+    grid-area: barraClasica;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #d49d81;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    padding: .5rem;
+    max-width: 544px; }
+  .estiloTartas .clasicaUno, .estiloTartas .clasicaDos, .estiloTartas .clasicaTres, .estiloTartas .clasicaCuatro, .estiloTartas .clasicaCinco, .estiloTartas .clasicaSeis, .estiloTartas .clasicaSiete, .estiloTartas .clasicaOcho, .estiloTartas .clasicaNueve {
+    grid-area: clasicaUno;
+    max-width: 305px;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+    margin: .5rem;
+    justify-self: center;
+    background-color: white;
+    border-radius: 0.5rem; }
+    .estiloTartas .clasicaUno .imagen, .estiloTartas .clasicaDos .imagen, .estiloTartas .clasicaTres .imagen, .estiloTartas .clasicaCuatro .imagen, .estiloTartas .clasicaCinco .imagen, .estiloTartas .clasicaSeis .imagen, .estiloTartas .clasicaSiete .imagen, .estiloTartas .clasicaOcho .imagen, .estiloTartas .clasicaNueve .imagen {
+      max-width: 305px;
+      max-height: 305px;
+      border-radius: 0.5rem 0.5rem 0 0; }
+    .estiloTartas .clasicaUno .nombre, .estiloTartas .clasicaDos .nombre, .estiloTartas .clasicaTres .nombre, .estiloTartas .clasicaCuatro .nombre, .estiloTartas .clasicaCinco .nombre, .estiloTartas .clasicaSeis .nombre, .estiloTartas .clasicaSiete .nombre, .estiloTartas .clasicaOcho .nombre, .estiloTartas .clasicaNueve .nombre {
+      margin: 0.5rem;
+      padding: 0.2rem;
+      font-weight: bold;
+      text-align: center; }
+  .estiloTartas .clasicaDos {
+    grid-area: clasicaDos; }
+  .estiloTartas .clasicaTres {
+    grid-area: clasicaTres; }
+  .estiloTartas .clasicaCuatro {
+    grid-area: clasicaCuatro; }
+  .estiloTartas .clasicaCinco {
+    grid-area: clasicaCinco; }
+  .estiloTartas .clasicaSeis {
+    grid-area: clasicaSeis; }
+  .estiloTartas .clasicaSiete {
+    grid-area: clasicaSiete; }
+  .estiloTartas .clasicaOcho {
+    grid-area: clasicaOcho; }
+  .estiloTartas .clasicaNueve {
+    grid-area: clasicaNueve; }
+
+.estiloBundt {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .estiloBundt .barraBundt {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #d49d81;
+    border-radius: 1.5rem;
+    margin: 1rem;
+    padding: .5rem;
+    max-width: 544px; }
+  .estiloBundt .tarjetaBundt {
+    display: flex;
+    flex-direction: column; }
+    .estiloBundt .tarjetaBundt .bundtUno, .estiloBundt .tarjetaBundt .bundtDos, .estiloBundt .tarjetaBundt .bundtTres, .estiloBundt .tarjetaBundt .bundtCuatro, .estiloBundt .tarjetaBundt .bundtCinco, .estiloBundt .tarjetaBundt .bundtSeis {
+      max-width: 305px;
+      box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+      margin: .5rem;
+      justify-self: center;
+      background-color: white;
+      border-radius: 0.5rem; }
+      .estiloBundt .tarjetaBundt .bundtUno .imagen, .estiloBundt .tarjetaBundt .bundtDos .imagen, .estiloBundt .tarjetaBundt .bundtTres .imagen, .estiloBundt .tarjetaBundt .bundtCuatro .imagen, .estiloBundt .tarjetaBundt .bundtCinco .imagen, .estiloBundt .tarjetaBundt .bundtSeis .imagen {
+        max-height: 305px;
+        border-radius: 0.5rem 0.5rem 0 0; }
+      .estiloBundt .tarjetaBundt .bundtUno .nombre, .estiloBundt .tarjetaBundt .bundtDos .nombre, .estiloBundt .tarjetaBundt .bundtTres .nombre, .estiloBundt .tarjetaBundt .bundtCuatro .nombre, .estiloBundt .tarjetaBundt .bundtCinco .nombre, .estiloBundt .tarjetaBundt .bundtSeis .nombre {
+        margin: 0.5rem;
+        padding: 0.2rem;
+        font-weight: bold;
+        text-align: center; }
+      .estiloBundt .tarjetaBundt .bundtUno .texto, .estiloBundt .tarjetaBundt .bundtDos .texto, .estiloBundt .tarjetaBundt .bundtTres .texto, .estiloBundt .tarjetaBundt .bundtCuatro .texto, .estiloBundt .tarjetaBundt .bundtCinco .texto, .estiloBundt .tarjetaBundt .bundtSeis .texto {
+        text-align: center;
+        padding: 1rem; }
+
+.inicioContacto .bienvenidaContacto {
+  background-color: #d49d81;
+  border-radius: 2rem;
+  margin: 1rem;
+  text-align: center; }
+
+.inicioContacto .parrafoContacto {
+  font-family: 'Open Sans';
+  margin: 1rem;
+  text-align: justify; }
+
+.inicioContacto .imagenContacto {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+  padding: 1rem; }
+
+.formulario .tituloForm {
+  text-align: center; }
+
+.formulario form {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 90%;
+  font-weight: bold; }
+  .formulario form label {
+    justify-content: center; }
+  .formulario form input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 3px solid #B4846C; }
+  .formulario form .botonBorrar, .formulario form .botonEnviar {
+    background: #d49d81;
+    height: 2.3rem;
+    width: 60%;
+    margin-left: 25%;
+    border: 3px solid #B4846C;
+    border-radius: 5px;
+    margin-top: 1rem; }
+  .formulario form .botonEnviar {
+    background: #fcd4c0; }
+
+@media screen and (min-width: 768px) {
+  .estiloIndex .carrouselIndex {
+    max-width: 530px; }
+  .estiloIndex .promoMes {
+    max-width: 530px; }
+  .estiloAbout .videoUno {
+    width: 520px; }
+  .estiloTartas {
+    display: grid;
+    grid-template-areas: "barraClasica barraClasica" "clasicaUno clasicaDos" "clasicaTres clasicaCuatro" "clasicaCinco clasicaSeis" "clasicaSiete clasicaOcho" "clasicaNueve clasicaNueve";
+    grid-gap: 0.5rem; }
+  .estiloBundt .tarjetaBundt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; } }
+
+@media screen and (min-width: 1024px) {
+  .estiloAbout .videoUno {
+    width: 520px; }
+  .estiloTartas {
+    display: grid;
+    grid-template-areas: "barraClasica barraClasica barraClasica" "clasicaUno clasicaDos clasicaTres" "clasicaCuatro clasicaCinco clasicaSeis" "clasicaSiete clasicaOcho clasicaNueve";
+    grid-gap: 0.5rem; } }
