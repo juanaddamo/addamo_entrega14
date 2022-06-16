@@ -26,10 +26,13 @@
     .footerUno .imagenContacto .imagenContacto1:hover, .footerUno .imagenContacto .imagenContacto2:hover, .footerUno .imagenContacto .imagenContacto3:hover, .footerUno .mainContacto .inicioContacto .imagenContacto .imagenContacto2:hover, .mainContacto .inicioContacto .footerUno .imagenContacto .imagenContacto2:hover, .footerUno .mainContacto .inicioContacto .imagenContacto .imagenContacto3:hover, .mainContacto .inicioContacto .footerUno .imagenContacto .imagenContacto3:hover {
       transform: scale(1.3); }
 
+.imagenLogo {
+  width: 85%; }
+
 body {
   background-image: url(../img/fondo_annies.png);
   font-family: 'Open Sans';
-  padding-top: 8rem; }
+  padding-top: 10rem; }
 
 .estiloIndex {
   display: flex;
@@ -78,11 +81,10 @@ body {
     background-color: #F9CEEE;
     left: 0rem; } }
   .estiloIndex .promoMes {
-    width: 100%;
-    max-width: 520px;
+    width: 90%;
     margin: 1rem;
     padding: .5rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3); }
   .estiloIndex .promoMes:hover {
     transform: scale(1.02); }
   .estiloIndex .parrafoDescriptivo {
