@@ -57,30 +57,31 @@ body {
     margin: 1rem;
     max-width: 520px; }
   .estiloIndex .promo {
-    background-color: #F9CEEE;
+    background-color: #B4846C;
     position: relative;
     animation-name: movimiento;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     margin: 1rem;
     padding: 1rem;
+    border: 1px solid #B4846C;
     border-radius: 1rem; }
 
 @keyframes movimiento {
   0% {
-    background-color: #F9CEEE;
+    background-color: #B4846C;
     left: 0rem; }
   25% {
-    background-color: #F9F3EE;
+    background-color: #CCF3EE;
     left: 2rem; }
   50% {
-    background-color: #CCF3EE;
+    background-color: #fcd4c0;
     left: 0rem; }
   75% {
-    background-color: #97C4B8;
+    background-color: #CCF3EE;
     left: -2rem; }
   100% {
-    background-color: #F9CEEE;
+    background-color: #B4846C;
     left: 0rem; } }
   .estiloIndex .promoMes {
     width: 90%;

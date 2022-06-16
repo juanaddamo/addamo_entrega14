@@ -48,20 +48,21 @@ body{
         max-width: $anchoTotal;
     }
     .promo {
-        background-color: #F9CEEE;
+        background-color: $colorOscuro;
         position: relative;
         animation-name: movimiento;
         animation-duration: 4s;
         animation-iteration-count: infinite;
         margin: 1rem;
         padding: 1rem;
+        border: 1px solid $colorOscuro;
         border-radius: 1rem;
         @keyframes movimiento {
-            0% {background-color: #F9CEEE; left: 0rem;}
-            25% {background-color: #F9F3EE; left: 2rem;}
-            50% {background-color: #CCF3EE; left: 0rem;}
-            75% {background-color: #97C4B8; left: -2rem;}
-            100% {background-color: #F9CEEE; left: 0rem;}
+            0% {background-color: $colorOscuro; left: 0rem;}
+            25% {background-color: $colorPromo; left: 2rem;}
+            50% {background-color: $colorClaro; left: 0rem;}
+            75% {background-color: $colorPromo; left: -2rem;}
+            100% {background-color: $colorOscuro; left: 0rem;}
         }
     }
     .promoMes {
