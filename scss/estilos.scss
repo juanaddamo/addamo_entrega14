@@ -15,7 +15,7 @@
 body{
     background-image: url(../img/fondo_annies.png);
     font-family: 'Open Sans';
-    padding-top: 7rem;
+    padding-top: 8rem;
 }
 
 .estiloIndex{
@@ -24,26 +24,51 @@ body{
     justify-content: center;
     .saludoUno{
         text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+        width: auto;
+        background-color: $colorClaro;
+        color: $colorOscuro;
+        border: 1px solid $colorOscuro;
+        border-radius: 1.5rem;
+    }
+    h2{
+        color: $colorOscuro;
     }
     .carrouselIndex{
-        width: 95%;
+        width: 100%;
+        margin: 1rem;
+        max-width: $anchoTotal;
     }
     .promo {
-        margin: 10px;
-        padding: 10px;
+        background-color: #F9CEEE;
+        position: relative;
+        animation-name: movimiento;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        @keyframes movimiento {
+            0% {background-color: #F9CEEE; left: 0rem;}
+            25% {background-color: #F9F3EE; left: 2rem;}
+            50% {background-color: #CCF3EE; left: 0rem;}
+            75% {background-color: #97C4B8; left: -2rem;}
+            100% {background-color: #F9CEEE; left: 0rem;}
+        }
     }
     .promoMes {
-        width: 95%;
-        margin: 10px;
-        padding: 10px;
-        box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+        @include formatoImagen ();
+        box-shadow: .2rem .2rem .2rem .2rem rgba(0, 0, 0, .2);
     }
     .promoMes:hover{
         transform: scale(1.02);
     }
     .parrafoDescriptivo{
         padding: 0.5rem;
+        max-width: $anchoTotal;
         text-align: center;
+        color: $colorOscuro
     }
 }
 
@@ -51,12 +76,28 @@ body{
 .estiloAbout{
     @include flex (flex, column);
     margin: 0.5rem;
+    align-items: center;
+    .sobreMi{
+        text-align: center;
+        background-color: $colorClaro;
+        border: 1px solid $colorMedio;
+        color: $colorOscuro;
+        border-radius: 1.5rem;
+        margin: 1rem;
+        padding: .5rem;
+        width: 100%;
+        max-width: $anchoTotal;
+    }
     .videoUno{
-        width: $anchoVideo1;
+        width: 100%;
+        max-width: $anchoVideo;
+        height: auto;
         align-self: center;
     }
     .aboutCompleta{
         @include textos ();
+        width: 85%;
+        align-self: center;
         .imagenIconos{
             display: flex;
             margin: 1rem;
@@ -66,6 +107,7 @@ body{
     .aboutFirma{
         text-align: center;
         font-weight: bold;
+        background-color: $colorClaro;
     }
 }
 
@@ -179,26 +221,45 @@ body{
 }
 
 // nesting archivo contacto.html
-.inicioContacto{
-    .bienvenidaContacto{
-        background-color: $colorMedio;
-        border-radius: 2rem;
-        margin: 1rem;
-        text-align: center;
-    }
-    .parrafoContacto{
-        @include textos ();
-    }
-    .imagenContacto{
-        display: flex;
-        justify-content: space-evenly;
-        margin: 1rem;
-        padding: 1rem;
+.mainContacto {
+    @include flex (flex, column);
+    align-items: center;
+    .inicioContacto{
+        .bienvenidaContacto{
+            background-color: $colorClaro;
+            color: $colorOscuro;
+            border: 1px solid $colorOscuro;
+            border-radius: 1.5rem;
+            margin: 1rem;
+            padding: 0.5rem;
+            text-align: center;
+            max-width: $anchoTotal;
         }
+        .parrafoContacto{
+            @include textos ();
+            max-width: $anchoTotal;
+        }
+        .imagenContacto{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 1rem;
+            padding: 1rem;
+            .imagenContacto1:hover{
+                transform: scale(2);
+            }
+            .imagenContacto2:hover{
+                @extend .imagenContacto1:hover
+            }
+            .imagenContacto3:hover{
+                @extend .imagenContacto1:hover
+            }
+        }
+    }
 }
 
 .formulario{
     .tituloForm{
+        color: $colorOscuro;
         text-align: center;
     }
     form{
@@ -206,6 +267,7 @@ body{
         margin-bottom: 2rem;
         width: 90%;
         font-weight: bold;
+        max-width: $anchoTotal;
         label{
             justify-content: center;
         }
@@ -216,14 +278,20 @@ body{
             margin-bottom: 1rem;
             border: 3px solid $colorOscuro;
         }
+        textarea{
+            @extend input;
+        }
         .botonBorrar{
             background: $colorMedio;
             height: 2.3rem;
             width: 60%;
-            margin-left: 25%;
+            margin-left: 20%;
             border: 3px solid $colorOscuro;
             border-radius: 5px;
             margin-top: 1rem;
+        }
+        .botonBorrar:hover{
+            transform: scale(1.05);
         }
         .botonEnviar{
             background: $colorClaro;

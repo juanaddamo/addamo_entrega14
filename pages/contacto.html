@@ -64,7 +64,7 @@
     </header>
 
     <!-- main + links redes sociales + formulario contacto -->
-    <main>
+    <main class="mainContacto">
         <section class="inicioContacto">
             <!-- parrafo consultas -->
             <h1 class="bienvenidaContacto">
@@ -75,9 +75,9 @@
             </p>
             <!-- hipervinculos redes sociales -->
             <div class="imagenContacto">
-                <a href="https://www.facebook.com/anniesbakeryARG" target="_blank"> <img class="imagenContacto1" src="../img/icon_face.png" alt="Facebook"> </a>
-                <a href="https://www.instagram.com/anniesbakery_arg/" target="_blank"> <img class="imagenContacto2" src="../img/icon_ig.png" alt="Instagram"> </a>
-                <a href="mailto:info@anniesbakery.com.ar" target="_blank"> <img class="imagenContacto3" src="../img/email.png" alt="correo electronico"> </a>
+                <a href="https://www.facebook.com/anniesbakeryARG" target="_blank"> <img class="imagenContacto1" src="../img/icon_face_grad.png" alt="Facebook"> </a>
+                <a href="https://www.instagram.com/anniesbakery_arg/" target="_blank"> <img class="imagenContacto2" src="../img/icon_ig_grad.png" alt="Instagram"> </a>
+                <a href="mailto:info@anniesbakery.com.ar" target="_blank"> <img class="imagenContacto3" src="../img/icon_mail_grad.png" alt="correo electronico"> </a>
             </div>
             <p class="parrafoContacto">
                 Tambien podes completar el siguiente formulario y me pondre en contacto a la brevedad.
@@ -89,11 +89,11 @@
             <h2 class="tituloForm">Formulario de contacto</h2>
             <form action="">
                 <label for="nombre">Nombre: </label>
-                <input type="text" name="name" id="name" placeholder="ingresa tu nombre">
+                <input type="text" name="name" id="name" placeholder="ingresa tu nombre" required>
                 <label for="email">eMail: </label>
-                <input type="email" name="email" id="email" placeholder="ingresa tu email">
+                <input type="email" name="email" id="email" placeholder="ingresa tu email" required>
                 <label for="email">Consulta o pedido: </label>
-                <input type="consulta" name="consulta" id="consulta" placeholder="ingresa tu consulta y/o pedido">
+                <textarea name="consulta" id="consulta" placeholder="escribi tu consulta o realiza tu pedido" cols="" rows="4" required></textarea>
                 <button type="reset" class="botonBorrar">Borrar</button>
                 <button type="submit" class="botonEnviar">Enviar</button>
             </form>

@@ -1,16 +1,12 @@
 @media screen and (min-width: 768px) {
-    .estiloIndex{
-        .carrouselIndex{
-            max-width: $altoCarrousel;
-        }
-        .promoMes {
-            max-width: $altoCarrousel;
-        }
-    }
-    
     .estiloAbout{
         .videoUno{
-            width: 520px
+            max-width: $anchoVideo;
+            height: auto;
+        }
+        .aboutCompleta{
+            max-width: 85%;
+            align-self: center;
         }
     }
     .estiloTartas{
@@ -36,7 +32,8 @@
 @media screen and (min-width: 1024px) {
     .estiloAbout{
         .videoUno{
-            width: 520px;
+            max-width: $anchoVideo;
+            height: auto;
         }
     }
     .estiloTartas{
