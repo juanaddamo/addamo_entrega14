@@ -49,7 +49,9 @@ body {
     border: 1px solid #B4846C;
     border-radius: 1.5rem; }
   .estiloIndex h2 {
-    color: #B4846C; }
+    margin-top: .2rem;
+    color: #B4846C;
+    text-decoration: underline; }
   .estiloIndex .carrouselIndex {
     width: 100%;
     margin: 1rem;
