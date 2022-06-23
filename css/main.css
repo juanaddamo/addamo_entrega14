@@ -39,50 +39,49 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-  .estiloIndex .saludoUno {
+  .estiloIndex .parteUno .saludoUno {
     text-align: center;
     margin: 1rem;
     padding: 1rem;
     width: auto;
     background-color: #fcd4c0;
-    color: #B4846C;
+    color: black;
     border: 1px solid #B4846C;
+    border-style: double;
     border-radius: 1.5rem; }
-  .estiloIndex h2 {
+  .estiloIndex .parteUno h2 {
+    text-align: center;
     margin-top: .2rem;
     color: #B4846C;
     text-decoration: underline; }
-  .estiloIndex .carrouselIndex {
+  .estiloIndex .parteDos .carrouselIndex {
     width: 100%;
     margin: 1rem;
     max-width: 520px; }
-  .estiloIndex .promo {
-    background-color: #B4846C;
-    position: relative;
-    animation-name: movimiento;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #B4846C;
-    border-radius: 1rem; }
+  .estiloIndex .parteTres {
+    text-align: center; }
+    .estiloIndex .parteTres .promo {
+      background-color: #CCF3EE;
+      animation-name: colores;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      padding: 1rem;
+      border: 1px solid #B4846C;
+      border-radius: 1rem; }
 
-@keyframes movimiento {
+@keyframes colores {
   0% {
-    background-color: #B4846C;
-    left: 0rem; }
+    background-color: #B4846C; }
   25% {
-    background-color: #CCF3EE;
-    left: 2rem; }
+    background-color: #CCF3EE; }
   50% {
-    background-color: #fcd4c0;
-    left: 0rem; }
+    background-color: #B4846C; }
   75% {
-    background-color: #CCF3EE;
-    left: -2rem; }
+    background-color: #CCF3EE; }
   100% {
-    background-color: #B4846C;
-    left: 0rem; } }
+    background-color: #B4846C; } }
   .estiloIndex .promoMes {
     width: 90%;
     margin: 1rem;
@@ -94,7 +93,7 @@ body {
     padding: 0.5rem;
     max-width: 520px;
     text-align: center;
-    color: #B4846C; }
+    color: black; }
 
 .estiloAbout {
   display: flex;
@@ -295,6 +294,17 @@ body {
     justify-content: space-evenly; } }
 
 @media screen and (min-width: 1024px) {
+  .estiloIndex {
+    display: grid;
+    grid-template-areas: "parteUno parteUno" "parteDos parteTres";
+    grid-gap: 1rem;
+    text-align: center; }
+    .estiloIndex .parteUno {
+      grid-area: parteUno; }
+    .estiloIndex .parteDos {
+      grid-area: parteDos; }
+    .estiloIndex .parteTres {
+      grid-area: parteTres; }
   .estiloAbout .videoUno {
     max-width: 520px;
     height: auto; }

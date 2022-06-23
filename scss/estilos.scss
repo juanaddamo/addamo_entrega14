@@ -27,42 +27,51 @@ body{
     @include flex (flex, column);
     align-items: center;
     justify-content: center;
-    .saludoUno{
+    .parteUno{
+        .saludoUno{
+            text-align: center;
+            margin: 1rem;
+            padding: 1rem;
+            width: auto;
+            background-color: $colorClaro;
+            color: $colorNegro;
+            border: 1px solid $colorOscuro;
+            border-style: double;
+            border-radius: 1.5rem;
+        }
+        h2{
+            text-align: center;
+            margin-top: .2rem;
+            color: $colorOscuro;
+            text-decoration: underline;
+        }
+    }
+    .parteDos{
+        .carrouselIndex{
+            width: 100%;
+            margin: 1rem;
+            max-width: $anchoTotal;
+        }
+    }
+    .parteTres{
         text-align: center;
-        margin: 1rem;
-        padding: 1rem;
-        width: auto;
-        background-color: $colorClaro;
-        color: $colorOscuro;
-        border: 1px solid $colorOscuro;
-        border-radius: 1.5rem;
-    }
-    h2{
-        margin-top: .2rem;
-        color: $colorOscuro;
-        text-decoration: underline;
-    }
-    .carrouselIndex{
-        width: 100%;
-        margin: 1rem;
-        max-width: $anchoTotal;
-    }
-    .promo {
-        background-color: $colorOscuro;
-        position: relative;
-        animation-name: movimiento;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        margin: 1rem;
-        padding: 1rem;
-        border: 1px solid $colorOscuro;
-        border-radius: 1rem;
-        @keyframes movimiento {
-            0% {background-color: $colorOscuro; left: 0rem;}
-            25% {background-color: $colorPromo; left: 2rem;}
-            50% {background-color: $colorClaro; left: 0rem;}
-            75% {background-color: $colorPromo; left: -2rem;}
-            100% {background-color: $colorOscuro; left: 0rem;}
+        .promo {
+            background-color: $colorPromo;
+            animation-name: colores;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            padding: 1rem;
+            border: 1px solid $colorOscuro;
+            border-radius: 1rem;  
+            @keyframes colores {
+                0% {background-color: $colorOscuro;}
+                25% {background-color: $colorPromo;}
+                50% {background-color: $colorOscuro;}
+                75% {background-color: $colorPromo;}
+                100% {background-color: $colorOscuro;}
+            }
         }
     }
     .promoMes {
@@ -78,7 +87,7 @@ body{
         padding: 0.5rem;
         max-width: $anchoTotal;
         text-align: center;
-        color: $colorOscuro
+        color: $colorNegro;
     }
 }
 

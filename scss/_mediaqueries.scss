@@ -21,8 +21,7 @@
     }
     .estiloBundt{
         .tarjetaBundt{
-            display: flex;
-            flex-direction: row;
+            @include flex (flex, row);
             flex-wrap: wrap;
             justify-content: space-evenly;
         }
@@ -30,6 +29,22 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .estiloIndex{
+        display: grid;
+        grid-template-areas: "parteUno parteUno"
+                            "parteDos parteTres";
+        grid-gap: 1rem;
+        text-align: center;
+        .parteUno{
+            grid-area: parteUno;
+        }
+        .parteDos{
+            grid-area: parteDos;
+        }
+        .parteTres{
+            grid-area: parteTres;
+        }
+    }
     .estiloAbout{
         .videoUno{
             max-width: $anchoVideo;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,13 +19,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     
-    <title>Annie's Bakery</title>
+    <title>Annie's Bakery - Inicio</title>
 </head>
 
 <body>
     <!-- header + menu bootstrap -->
     <header class="header-principal">
-        <!-- menu con Bootstrap -->
+        <!-- menu con bootstrap -->
         <nav class="navbar fixed-top navbar-expand-lg border-bottom border-light border-2">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"> <img class="imagenLogo" src="img/logo_annies.png" alt="Annie's Bakery"></a>
@@ -63,41 +63,48 @@
         </nav>
     </header>
     
-    <!-- main con texto de descripcion del sitio + imagenes-->
+    <!-- main con texto de descripcion del sitio + carrousel + promo -->
     <main>
         <article class="estiloIndex">
-            <!-- Titulos bienvenida al sitio -->
-            <h1 class="saludoUno">  Bienvenid@s a Annie's Bakery </h1>
-            <h2> Pastelería Artesanal </h2>
-            <!-- carrousel del index -->
-            <section class="carrouselIndex">
-                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade shadow container-fluid" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/foto_inicio1.jpg" class="d-block w-100" alt="foto tarta de maracuya">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/foto_inicio2.jpg" class="d-block w-100" alt="foto chocotorta">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/foto_inicio3.jpg" class="d-block w-100" alt="foto tarta de naranja y chocolate">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/foto_inicio4.jpg" class="d-block w-100" alt="foto cheesecake oreo">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/foto_inicio5.jpg" class="d-block w-100" alt="foto cheesecake con frutos rojos">
+            <div class="parteUno">
+                <!-- Titulos de bienvenida al sitio -->
+                <h1 class="saludoUno">  Bienvenid@s a Annie's Bakery </h1>
+                <h2> Pastelería Artesanal </h2>
+                <!-- carrousel del index -->
+            </div>
+            <div class="parteDos">
+                <section class="carrouselIndex">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade shadow container-fluid" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/foto_inicio1.jpg" class="d-block w-100" alt="foto tarta de maracuya">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/foto_inicio2.jpg" class="d-block w-100" alt="foto chocotorta">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/foto_inicio3.jpg" class="d-block w-100" alt="foto tarta de naranja y chocolate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/foto_inicio4.jpg" class="d-block w-100" alt="foto cheesecake oreo">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/foto_inicio5.jpg" class="d-block w-100" alt="foto cheesecake con frutos rojos">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!-- promo del mes -->
-            <h3 class="promo"> ¡¡Promo del mes!! </h3>
-            <a href="pages/contacto.html"> <img class="promoMes" src="img/promo_mes.jpg" alt="imagen con la promo del mes"> </a>
-            <!-- parrafo descriptivo -->
-            <h3 class="parrafoDescriptivo">
-                Te invito a recorrer este sitio web donde encontrarás tartas clásicas, bundtcakes y otras cosas que preparo. 
-            </h3>
+                </section>
+                <!-- parrafo descriptivo -->
+                <h3 class="parrafoDescriptivo">
+                    Te invito a recorrer este sitio web donde encontrarás tartas clásicas, bundtcakes y otras cosas que preparo. 
+                </h3>
+            </div>
+            <div class="parteTres">
+                <!-- promo del mes -->
+                <h3 class="promo"> ¡¡Promo del mes!! </h3>
+                <a href="pages/contacto.html"> <img class="promoMes" src="img/promo_mes.jpg" alt="imagen con la promo del mes"> </a>
+
+            </div>
         </article>
     </main>
     <!-- footer -->
